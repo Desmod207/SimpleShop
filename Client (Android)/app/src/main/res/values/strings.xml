@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PizzaBoom</string>
+
+    <!--Текст ошибок-->
+    <string name="error_internet_connection">Нет соединения с сетью.</string>
+    <string name="error_server_connection">Нет соединения с сервером.</string>
+
+    <string name="loading_data">Загрузка данных...</string>
+
+    <!--Текст всплывающих сообщений-->
+    <string name="add_order_message">Товар добавлен в корзину</string>
+    <string name="order_placed">Заказ сделан</string>
+    <string name="order_complete_message">Ваш заказ передан, в ближайшее время с вами свяжется менеджер</string>
+
+    <string name="phone_hint">Номер телефона</string>
+    <string name="total_price">Итого</string>
+    <string name="cart_button">В корзину</string>
+    <string name="order_button">Заказать</string>
+    <string name="info_image">info image</string>
+    <string name="card_image">card image</string>
+    <string name="add_order_title">Add order</string>
+    <string name="phone_text">Введите ваш номер телефона</string>
+</resources>

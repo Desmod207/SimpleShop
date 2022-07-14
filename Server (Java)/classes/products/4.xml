@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+    <pizzas>
+        <pizza>
+            <name>Peperoni</name>
+            <price>300</price>
+			<description>Пицца на тонком тесте с томатным соусом, колбаской Пеперони и Моцареллой.</description>
+			<image>peperoni.jpg</image>
+        </pizza>
+        <pizza>
+            <name>Diablo</name>
+            <price>350</price>
+			<description>Для пиццы «Диабло» свойственно уникальная вкусовая гамма, которая особенно придется по душе поклонникам достаточно острых блюд.</description>
+			<image>diablo.png</image>
+        </pizza>
+        <pizza>
+            <name>4-cheese</name>
+            <price>250</price>
+			<description>Пицца в состав которой входят 4 разных сыра.</description>
+			<image>4-cheese.jpg</image>
+        </pizza>
+        <pizza>
+            <name>Vegan</name>
+            <price>250</price>
+			<description>Пицца для вегетарианцев.</description>
+			<image>vegan.jpg</image>
+        </pizza>
+		<pizza>
+			<name>Burger</name>
+			<price>50</price>
+			<description>Пицца из того что осталось на кухне.</description>
+			<image>burger.jpeg</image>
+		</pizza>
+		<pizza>
+			<name>Russia</name>
+			<price>150</price>
+			<description>Пицца по русски.</description>
+			<image>russian.jpg</image>
+		</pizza>
+    </pizzas>
+	<hotdogs>
+		<hotdog>
+			<name>Classic</name>
+			<price>150</price>
+			<description>Класический хотдог.</description>
+			<image>classic.jpg</image>
+		</hotdog>
+		<hotdog>
+			<name>Hot</name>
+			<price>180</price>
+			<description>Острый хотдог.</description>
+			<image>hot.png</image>
+		</hotdog>
+	</hotdogs>	
+</products>
