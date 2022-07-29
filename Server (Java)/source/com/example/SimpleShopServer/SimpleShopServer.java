@@ -12,16 +12,18 @@ import java.net.Socket;
 
 public class SimpleShopServer {	
 
-	private final static int VERSION_MSG = 1;
-	private final static int UPLOAD_MSG  = 2;
-	private final static int ORDER_MSG 	 = 8;	
-	private final static int IMAGE_MSG 	 = 9;
-	 	
+	private final static String PRODUCTS_DIR = "./products";
+
+	private final static int VERSION_MSG	= 1;
+	private final static int UPLOAD_MSG		= 2;
+	private final static int ORDER_MSG		= 8;	
+	private final static int IMAGE_MSG		= 9;
+	
 	private static int version = 0;
 	private static int orderCounter = 0;
 
 	public static void main(String[] args) {
-		File file = new File("./products");
+		File file = new File(PRODUCTS_DIR);
 		// Смотрим существует ли директория products
 		if (!file.exists()) {
 			// Если не существует создаём новую директорию
@@ -77,13 +79,13 @@ public class SimpleShopServer {
 			OutputStream outputStream = clientSocket.getOutputStream();
 
 			byte[] buffer = new byte[1024];
-			int length;			
+			int length;
 			switch (message) {
 				case VERSION_MSG: // Клиент просит передать актуальную версию productList
 					outputStream.write(version);
 					break;
 				case UPLOAD_MSG: // Клиент просит передать актуальный файл productList
-					sendFile(outputStream, "./products/" + Integer.toString(version) + ".xml");				
+					sendFile(outputStream, PRODUCTS_DIR + "//" + Integer.toString(version) + ".xml");				
 					break;
 				case ORDER_MSG: // Клиент передаёт заказ
 					length = inputStream.read(buffer);
